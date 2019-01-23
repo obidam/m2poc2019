@@ -1,0 +1,13 @@
+plugins:
+  source:
+    - module: intake_xarray
+sources:
+  argo_global_homogeneous_sdl:
+    description: Global homogeneously distributed Standard Depth Level Argo profiles in zarr format
+    driver: zarr
+    args:
+      storage_options:
+        project: 'poised-honor-358'
+        token: anon
+        access: read_only
+      urlpath: 'gcs://sonific01/ARGO/GLOB_HOMOGENEOUS_variables.zarr'    
