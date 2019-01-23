@@ -1,8 +1,8 @@
-# M2POC Projects
+# M2POC Projects Guidline
 
 ## Procedure
 - Fork this github repository to your own account
-- Add a folder under m2poc2018/projects, name it with your last name
+- Add a folder under m2poc2019/projects, name it with your last name
 - Work out your project codes/documentation and stage/push it to your folder
 - Once finalised, create a pull request to the main branch
 
@@ -27,7 +27,7 @@ A collection of 500,000 Temp/Sal/Sig0/N2 profiles interpolated on 302 standard d
 - https://storage.cloud.google.com/sonific01/ARGO/GLOB_HOMOGENEOUS_variables_3subset_3.nc (~1.84Gb)
 
 ### North Atlantic Argo data
-A collection of 100,000 Temp/Sal/Sig0/N2 profiles interpolate d on 282 standard depth levels.
+A collection of 100,000 Temp/Sal/Sig0/N2 profiles interpolated on 282 standard depth levels.
 
 - https://storage.googleapis.com/sonific01/ARGO/NATL_HOMOGENEOUS_variables_7subset_1.nc (~30MB)
 - https://storage.googleapis.com/sonific01/ARGO/NATL_HOMOGENEOUS_variables_7subset_2.nc (~30MB)
@@ -38,8 +38,7 @@ A collection of 100,000 Temp/Sal/Sig0/N2 profiles interpolate d on 282 standard 
 - https://storage.googleapis.com/sonific01/ARGO/NATL_HOMOGENEOUS_variables_7subset_7.nc (~275MB)
 
 ### North-West Atlantic observation ensemble from OCCIPUT 
-OCCIPUT is an ensemble of 0.25x0.25 global numerical simulations (50 members). The dataset contains the 50 realisations 
-interpolated at the location of 460 observed profiles [https://meom-group.github.io/projects/occiput].
+OCCIPUT is an ensemble of 0.25x0.25 global numerical simulations (50 members). The dataset contains the 50 realisations interpolated at the location of 460 observed profiles [https://meom-group.github.io/projects/occiput].
 
 - https://storage.googleapis.com/pirate_data/ENS/y2014m06/ORCA025.L75-OCCITENS.y2014m06_EDWregion.nc (1.96 Gb)
 
@@ -67,7 +66,7 @@ A training set containing labelled data from Argo quality control procedure [htt
 
 ## Suggestions
 
-You are encouraged to seek out for your own ideas and propositions for project.
+You are encouraged to seek out for your own ideas and propositions for your project.
 Here is a list of possible projects to be conducted during the 1.5 days. 
 
 ### Clustering
