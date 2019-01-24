@@ -20,7 +20,7 @@ sources:
                 project: 'poised-honor-358'
                 token: anon
                 access: read_only
-    isas15_temp_natl_cdf:
+    isas15_temp_natl:
         description: North Atlantic ISAS15 temperature field in zarr format
         driver: zarr
         args:
