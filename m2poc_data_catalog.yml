@@ -26,4 +26,16 @@ sources:
     args:
       urlpath: '/home/jovyan/data/ISAS15_TEMP_NATL.nc'
       engine: netcdf4
-      chunks: {'time':12}    
+      chunks: {'time':12}
+  sea_surface_height:
+    description: sea-surface altimetry data from The Copernicus Marine Environment
+    metadata:
+      url: 'http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com_csw&view=details&product_id=SEALEVEL_GLO_PHY_L4_REP_OBSERVATIONS_008_047'
+      tags:
+        - ocean
+        - satellite
+    driver: zarr
+    args:
+      urlpath: gcs://pangeo-data/dataset-duacs-rep-global-merged-allsat-phy-l4-v3-alt
+      storage_options:
+        token: anon          
