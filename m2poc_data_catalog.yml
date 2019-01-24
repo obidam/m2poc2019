@@ -20,6 +20,24 @@ sources:
                 project: 'poised-honor-358'
                 token: anon
                 access: read_only
+    argo_natl_homogeneous_sdl:
+        description: North Atlantic homogeneously distributed Standard Depth Level Argo profiles in zarr format
+        driver: zarr
+        args:
+            urlpath: 'gcs://sonific01/ARGO/NATL_HOMOGENEOUS_variables.zarr'  
+            storage_options:
+                project: 'poised-honor-358'
+                token: anon
+                access: read_only
+    argo_natl_sdl:
+        description: All North Atlantic Standard Depth Level Argo profiles in zarr format
+        driver: zarr
+        args:
+            urlpath: 'gcs://sonific01/ARGO/NATL_HOMOGENEOUS_variables_all.zarr'  
+            storage_options:
+                project: 'poised-honor-358'
+                token: anon
+                access: read_only
     isas15_temp_natl:
         description: North Atlantic ISAS15 temperature field in zarr format
         driver: zarr
