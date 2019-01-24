@@ -2,40 +2,40 @@ plugins:
   source:
     - module: intake_xarray
 sources:
-  argo_global_vertical_mean:
-    description: Global Argo profiles vertical mean temperature in zarr format
-    driver: zarr
-    args:
-      urlpath: 'gcs://sonific01/ARGO/Global_Argo_VerticalMean_Temperature.zarr'
-      storage_options:
-        project: 'poised-honor-358'
-        token: anon
-        access: read_only
-  argo_global_homogeneous_sdl:
-    description: Global homogeneously distributed Standard Depth Level Argo profiles in zarr format
-    driver: zarr
-    args:
-      urlpath: 'gcs://sonific01/ARGO/GLOB_HOMOGENEOUS_variables.zarr'  
-      storage_options:
-        project: 'poised-honor-358'
-        token: anon
-        access: read_only
-  isas15_temp_natl:
-    description: North Atlantic ISAS15 temperature field
-    driver: netcdf
-    args:
-      urlpath: '/home/jovyan/data/ISAS15_TEMP_NATL.nc'
-      engine: netcdf4
-      chunks: {'time':12}
-  sea_surface_height:
-    description: sea-surface altimetry data from The Copernicus Marine Environment
-    metadata:
-      url: 'http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com_csw&view=details&product_id=SEALEVEL_GLO_PHY_L4_REP_OBSERVATIONS_008_047'
-      tags:
-        - ocean
-        - satellite
-    driver: zarr
-    args:
-      urlpath: gcs://pangeo-data/dataset-duacs-rep-global-merged-allsat-phy-l4-v3-alt
-      storage_options:
-        token: anon          
+    argo_global_vertical_mean:
+        description: Global Argo profiles vertical mean temperature in zarr format
+        driver: zarr
+        args:
+            urlpath: 'gcs://sonific01/ARGO/Global_Argo_VerticalMean_Temperature.zarr'
+            storage_options:
+                project: 'poised-honor-358'
+                token: anon
+                access: read_only
+    argo_global_homogeneous_sdl:
+        description: Global homogeneously distributed Standard Depth Level Argo profiles in zarr format
+        driver: zarr
+        args:
+            urlpath: 'gcs://sonific01/ARGO/GLOB_HOMOGENEOUS_variables.zarr'  
+            storage_options:
+                project: 'poised-honor-358'
+                token: anon
+                access: read_only
+    isas15_temp_natl:
+        description: North Atlantic ISAS15 temperature field
+        driver: netcdf
+        args:
+            urlpath: '/home/jovyan/data/ISAS15_TEMP_NATL.nc'
+            engine: netcdf4
+            chunks: {'time':12}
+    sea_surface_height:
+        description: sea-surface altimetry data from The Copernicus Marine Environment
+        metadata:
+            url: 'http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com_csw&view=details&product_id=SEALEVEL_GLO_PHY_L4_REP_OBSERVATIONS_008_047'
+            tags:
+                - ocean
+                - satellite
+        driver: zarr
+        args:
+            urlpath: gcs://pangeo-data/dataset-duacs-rep-global-merged-allsat-phy-l4-v3-alt
+            storage_options:
+                token: anon  
