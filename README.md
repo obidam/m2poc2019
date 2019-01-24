@@ -18,5 +18,4 @@ Objectives of the class are:
 - To learn how to handle data mining of large datasets 
 	eg: xarray/dask-ml, pyspark, tensorflow
 
-
-Material for the practice session has been developped by @gmaze
+Material for the practice session has been developped by G. Maze 
