@@ -38,7 +38,7 @@ This repo is a place holder for the class practice/tuto session and for projects
 
 Elements of this class were taken from the xarray, Dask and scikit-learn documentations. 
 
-Practice about handling methods for big data are mostly based and inspired from some material already published elsewhere (R. Abernathey at [pangeo-tutorial-agu-2018](https://github.com/pangeo-data/pangeo-tutorial-agu-2018))
+Practice about handling methods for big data and binder config folder are mostly based and inspired from some material already published elsewhere (R. Abernathey at [pangeo-tutorial-agu-2018](https://github.com/pangeo-data/pangeo-tutorial-agu-2018))
 
 The amazing machinery allowing us to conduct our projects in a friendly and effective environment arises from the [Pangeo community](http://pangeo.io).
 
