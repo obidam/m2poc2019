@@ -1,29 +1,29 @@
 plugins:
-  source:
-    - module: intake_xarray
+    source:
+        - module: intake_xarray
 sources:
     argo_global_vertical_mean:
-      description: Global Argo profiles vertical mean temperature in zarr format
-      driver: zarr
-      args:
-        storage_options:
-          project: 'poised-honor-358'
-          token: anon
-          access: read_only
-        urlpath: 'gcs://sonific01/ARGO/Global_Argo_VerticalMean_Temperature.zarr'
-  argo_global_homogeneous_sdl:
-    description: Global homogeneously distributed Standard Depth Level Argo profiles in zarr format
-    driver: zarr
-    args:
-      storage_options:
-        project: 'poised-honor-358'
-        token: anon
-        access: read_only
-      urlpath: 'gcs://sonific01/ARGO/GLOB_HOMOGENEOUS_variables.zarr'    
-  isas15_temp_natl:
-      description: North Atlantic ISAS15 temperature field
-      driver: netcdf
-      args:
-          urlpath: '/home/jovyan/data/ISAS15_TEMP_NATL.nc'
-          engine: netcdf4
-          chunks: {'time':12}      
+        description: Global Argo profiles vertical mean temperature in zarr format
+        driver: zarr
+        args:
+            storage_options:
+                project: 'poised-honor-358'
+                token: anon
+                access: read_only
+                urlpath: 'gcs://sonific01/ARGO/Global_Argo_VerticalMean_Temperature.zarr'
+    argo_global_homogeneous_sdl:
+        description: Global homogeneously distributed Standard Depth Level Argo profiles in zarr format
+        driver: zarr
+        args:
+            storage_options:
+                project: 'poised-honor-358'
+                token: anon
+                access: read_only
+                urlpath: 'gcs://sonific01/ARGO/GLOB_HOMOGENEOUS_variables.zarr'    
+    isas15_temp_natl:
+        description: North Atlantic ISAS15 temperature field
+        driver: netcdf
+        args:
+            urlpath: '/home/jovyan/data/ISAS15_TEMP_NATL.nc'
+            engine: netcdf4
+            chunks: {'time':12}      
