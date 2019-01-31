@@ -2,6 +2,15 @@ plugins:
   source:
     - module: intake_xarray
 sources:
+    natl12_gsbox:
+        description: NATL12 Gulf Stream box 2003-2006 in zarr format
+        driver: zarr
+        args:
+            urlpath: 'gcs://sonific01/NATL12/GSbox-NATL12-BAMT20_0306_gridT_NA.zarr'
+            storage_options:
+                project: 'poised-honor-358'
+                token: anon
+                access: read_only
     argo_global_vertical_mean:
         description: Global Argo profiles vertical mean temperature in zarr format
         driver: zarr
